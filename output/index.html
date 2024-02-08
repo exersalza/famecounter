@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .yup {
+        color: white;
+    }
+
+    .last {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .lost {
+        color: red;
+    }
+
+    .won {
+        color: green;
+    }
+    
+    .score {
+        margin: .5rem 0;
+        color: white;
+    }
+</style>
+<script>
+    function auto_reload() {setInterval(() => {fetch("http://127.0.0.1:6969").then(response => {if (!response.ok) {return;}window.location.reload(true);}).then(e => {})}, 5000)}
+</script>
+<body onload="auto_reload()">
+
+<p class="score">Fame Points {current} / {togo}</p><p class="score">Games Played: {played}</p>
+<div class="last">
+{last_scores}
+</div>
+</body>
+</html>
