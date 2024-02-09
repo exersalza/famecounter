@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Nova Flat', system-ui;
+}
+
+
+* {
+    font-family: 'Nova Flat', serif;
+}
+
+.t-stroke {
+    -webkit-text-stroke: .5px black;
+}
