@@ -33,11 +33,12 @@ export function App() {
     return (
         <div className={"text-2xl font-bold text-white"}>
             <p className={"text"}>
-                Current: {pastGames.current ? pastGames.current : 0} / Gained: <span className={`${t_color(pastGames.all)}`}>{pastGames.all ? pastGames.all : 0}</span>
+                FP: {pastGames.current ? pastGames.current : 0} / <span
+                className={`${t_color(pastGames.all)}`}>{pastGames.all ? pastGames.all : 0} </span>in {pastGames.all_games_played ? pastGames.all_games_played : 0}
             </p>
             <div className={"flex flex-col text-lg text-right w-10"}>
                 {pastGames.recent?.reverse().map((i, index) => {
-                    return <PastGames score={i} index={index} />
+                    return <PastGames score={i} index={index}/>
                 })}
             </div>
         </div>
