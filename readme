@@ -1,1 +1,7 @@
+## Deprecated TheFinals fame counter for Streamers
+
+Uses tesseract for text recognition and python with preact to pass and show data.
+
 https://github.com/UB-Mannheim/tesseract/wiki
+
+Due to change in TheFinals rank system will this system not work, I made it public so people who are interested in Text recognition can see my janky code.
